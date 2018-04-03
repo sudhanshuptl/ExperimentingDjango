@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include, url
-from . import views
+from music.views import home
+
 urlpatterns = [
     url('admin/', admin.site.urls),
     url('^music/', include('music.urls')),
-    url(r'^$', views.homepage)
+    url(r'^$', home)
 ]

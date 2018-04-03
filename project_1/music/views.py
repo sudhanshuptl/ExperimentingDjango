@@ -24,3 +24,5 @@ def details(request,album_id):
         raise Http404('Album Does not Exist')
     return render(request,'music/details.html',{'album':album})
 
+def home(request):
+    return render(request, 'home.html', {})
