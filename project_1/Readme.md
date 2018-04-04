@@ -42,3 +42,8 @@ Go to command prompt and ```python manage.py createsuperuser```
 * goto ```music\admin.py``` 
 * Import  models ```from .models import Album,Song```
 * Register Models ```admin.site.register(Album)```
+
+### Using Foreign Key to add new member
+* Create an instance of primary table ```a=Album.objects.get(pk=1)```
+* Add data using foreign key of above ```a.song_set.create(song_title='This is lata ji',file_type='mp3')```
+* Check All Object od related data ```a.song_set.all()```

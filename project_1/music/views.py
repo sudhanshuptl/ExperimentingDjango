@@ -22,7 +22,7 @@ def details(request,album_id):
         album = Album.objects.get(pk=album_id)
     except Album.DoesNotExist:
         raise Http404('Album Does not Exist')
-    return render(request,'music/details.html',{'album':album})
+    return render(request,'music/details.html',{'album': album})
 
 def home(request):
     return render(request, 'home.html', {})
