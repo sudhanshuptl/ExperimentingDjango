@@ -10,5 +10,5 @@ urlpatterns = [
     url(r'^(?P<album_id>[0-9]+)/$', views.details, name='detail'),
 
     # music/id/favorite
-    #url(r'^(?P<album_id>[0-9]+)/favorite/$', views.favorite, name='favorite'),
+    url(r'^(?P<album_id>[0-9]+)/favorite/$', views.favorite, name='favorite'),
 ]
