@@ -22,8 +22,9 @@ def details(request,album_id):
     return render(request,'music/details.html',{'album':album})
 
 
-def home(request):
-    return render(request, 'home.html', {})
+#def home(request):
+ #   return index(request)
+    #return render(request, 'home.html', {})
 
 
 def favorite(request, album_id):
