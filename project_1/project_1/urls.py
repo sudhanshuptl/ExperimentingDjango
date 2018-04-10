@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import include, url
-from music.views import index
+from music.views import IndexView
 
 urlpatterns = [
     url('admin/', admin.site.urls),
     url('^music/', include('music.urls')),
-    url(r'^$', index)
+    url(r'^$', IndexView.as_view())
 ]

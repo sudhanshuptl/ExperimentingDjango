@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.urls.resolvers import *
 # Create your models here.
 
 class Album(models.Model):
