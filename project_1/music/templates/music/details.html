@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends 'music/base.html' %}
+{% block body %}
 <img src="{{ album.album_logo }}" height="200" width="200">
 <h1> {{ album.album_title }}</h1>
 <h3>{{artist}}</h3>
@@ -24,5 +19,4 @@
   {% endfor %}
 <input type="submit" name="Favorite" value="Favorite">
 </form>
-</body>
-</html>
+{% endblock %}

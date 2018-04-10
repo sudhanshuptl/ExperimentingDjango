@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Music</title>
-</head>
-<body>
+{% extends 'music/base.html' %}
+{% block body %}
 {% if all_album %}
 <ul>
     {% for album in all_album %}
@@ -19,5 +14,4 @@
   {% else %}
     <h1>The is no Albums</h1>
 {% endif %}
-</body>
-</html>
+{% endblock %}
